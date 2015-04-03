@@ -1,6 +1,6 @@
 ;;; gimme-shell.el --- Pops up a shell buffer. If there isn't one, make one.
 
-;; Copyright (C) 100-2014 Etherald
+;; Copyright (C) 100-2015 Etherald
 
 ;; Author: Etherald <etherald@etherald.com>
 ;; Keywords: shell
