@@ -3,6 +3,7 @@
 ;; Copyright (C) 100-2015 Etherald
 
 ;; Author: Etherald <etherald@etherald.com>
+;; Version: 0.14
 ;; Created: 23 November 2014
 ;; Keywords: shell
 
