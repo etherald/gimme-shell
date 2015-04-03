@@ -1,9 +1,14 @@
-;;; gimme-shell.el --- Pops up a shell buffer. If there isn't one, make one.
+;;; gimme-shell.el --- Pops up a shell buffer. If there isn't one, make one
 
 ;; Copyright (C) 100-2015 Etherald
 
 ;; Author: Etherald <etherald@etherald.com>
+;; Created: 23 November 2014
 ;; Keywords: shell
+
+;; This file is not part of GNU Emacs.
+
+;; This file is free software...
 
 ;;; Commentary:
 ;; A small package to pop up a shell buffer. However, wherever, whatever,
