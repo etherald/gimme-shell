@@ -18,6 +18,7 @@
 
 ;;; Code:
 
+;;;###autoload
 (defun gimme-shell()
   "Pops up a shell buffer. If there isn't one, make one."
   ;; walk buffer list
