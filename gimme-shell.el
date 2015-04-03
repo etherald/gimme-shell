@@ -18,32 +18,33 @@
 
 ;;; Code:
 
+;;;###autoload
 (defun gimme-shell()
   "Pops up a shell buffer. If there isn't one, make one."
   ;; walk buffer list
   ;; pop to the 1st shell buffer
   ;; else make one
   (interactive)
-  (unless (pop-to-nearest-shell-buffer)
+  (unless (gimme-shell--pop-to-nearest-shell-buffer)
     (shell)))
 
-(defun pop-to-nearest-shell-buffer ()
+(defun gimme-shell--pop-to-nearest-shell-buffer ()
   "Pops to the nearest shell buffer in buffer list."
   ;; goto nearest shell buffer:
   ;; if one visible, focus that
   ;; else pop up shell buffer
   (interactive)
   (dolist (buf (buffer-list))
-    (when (and (shell-mode-p buf)
+    (when (and (gimme-shell--shell-mode-p buf)
 	       (not (eq buf (current-buffer))))
       (pop-to-buffer buf))))
 
-  (defun shell-mode-p (buf)
+(defun gimme-shell--shell-mode-p (buf)
   "Returns whether the given buffer is in shell-mode."
-  (eq (buffer-mode buf)
+  (eq (gimme-shell--buffer-mode buf)
       'shell-mode))
 
-(defun buffer-mode (buffer-or-string)
+(defun gimme-shell--buffer-mode (buffer-or-string)
   "Returns the major mode associated with a buffer."
   (with-current-buffer buffer-or-string
     major-mode))
