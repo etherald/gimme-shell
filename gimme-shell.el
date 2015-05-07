@@ -49,4 +49,5 @@
   (with-current-buffer buffer-or-string
     major-mode))
 
+(provide 'gimme-shell)
 ;;; gimme-shell.el ends here
